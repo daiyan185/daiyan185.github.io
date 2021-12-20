@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root{
+    --color1:hsl(115, 96%, 73%);
+    --color2:hsl(0, 0%, 100%);
+    --color3:hsl(0, 0%, 0%);
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      background:var(--color3);
+      scroll-behavior: smooth;
+
+    }
+
+                     /* navigation */
+  .nav{
+  justify-content: space-evenly;
+  display: flex;
+  box-shadow: 0px 2px 8px #fafafa6b;
+}
+.nav li {
+  list-style: none;
+  padding: 10px;
+}
+.nav li a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: var(--color1);
+   transition: all 0.3s linear 0s;
+}
+.nav li a:hover{
+  color: var(--color2);
+  border-bottom: 2px solid var(--color1);
+
+}
+.nav li a .fas,
+.nav li a .far{
+    padding:7px
+}
+  
+ 
+
+  .center{
+      margin-top: 17px;
+display: grid;
+place-items: center;
+    }
+    #P_1{
+      color: var(--color2);
+      text-align: center;
+    }
+    .project{
+      margin-top: 10px;
+      padding: 30px;
+      display: grid;
+      place-items: center;
+  background: var(--color1);
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+    .project_card{
+      color: var(--color1);
+      width: 300px;
+      height: 400px;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0px 0px 8px 0px rgb(5 6 5);
+    }
+    .project_card:hover{
+       transform: translateY(3px) scale(1.02);
+    }
+#project_content{
+  color: var(--color2);
+}
+    .view_project{
+      margin-top: 26px;
+    }
+    .view_project a{
+      text-decoration: none;
+    padding: 10px;
+    color: var(--color2);
+    border: 2px solid var(--color1);
+    }
+    .view_project a:hover{
+      background: var(--color1);
+    color: var(--color3);
+    font-weight: 900;
+    }
+    .strech{
+      width: 0;
+        margin-top: 16px;
+        height: 10px;
+        border-radius: 10px;
+       border-bottom: 5px solid var(--color1);
+     }
+     .more{
+       display: flex;
+       justify-content: flex-end;
+       padding: 10px;
+     }
+     .more a{
+       text-decoration: none;
+       color: var(--color2);
+     }
+     
+     @keyframes large{
+       0%{
+         width:0px
+       }
+       100%{
+         width:300px;
+     
+       }
+     }
+     .fa-arrow-right{
+       color:var(--color1);
+       font-size: larger;
+     }
+    .fa-qrcode{
+      color: var(--color1);
+      font-size: 75px;
+      padding: 10px;
+    }
+    .fa-volume-up{
+      color: var(--color1);
+      font-size: 75px;
+      padding: 10px;
+    }
+   .fa-paint-brush{
+    color: var(--color1);
+      font-size: 75px;
+      padding: 10px;
+
+   }
+   .fa-hourglass-half{
+    color: var(--color1);
+      font-size: 75px;
+      padding: 10px;
+   }
+  .fa-compass{
+    color: var(--color1);
+      font-size: 75px;
+      padding: 10px;
+  }
+  .fa-mobile-alt{
+    color: var(--color1);
+      font-size: 75px;
+      padding: 10px;
+  }
+  .fa-desktop{
+    color: var(--color1);
+      font-size: 75px;
+      padding: 10px;
+  }
+  .fa-grin-squint-tears{
+    color: var(--color1);
+      font-size: 75px;
+      padding: 10px;
+  }
+  .fa-bitcoin{
+    color: var(--color1);
+      font-size: 75px;
+      padding: 10px;
+  }
+  .fa-database{
+    color: var(--color1);
+      font-size: 75px;
+      padding: 10px;
+  }
+
+    /* footer */
+    footer{
+      width: 100%;
+      height: 300px;
+      padding: 20px;
+      display: grid;
+      box-shadow: inset 0px 0px 20px 0px #5988217d;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 10px;
+    }
+    .msg{
+      display: grid;
+      place-items: center;
+    }
+    form{
+      display: grid;
+      place-items: center;
+    }
+    input[type="email"], input[type="text"]{
+      width: 317px;
+      background: rgba(167, 167, 167, 0.3);
+      height: 49px;
+      outline: none;
+      border: none;
+      color: var(--color1);
+      font-size: 20px;
+      padding: 10px;
+      border-left: 2px solid var(--color1);
+    }
+    input[type="submit"]{
+      width: 97px;
+    border-radius: 22px;
+    outline: none;
+    border: 2px solid var(--color1);
+      height: 40px;
+      font-weight: 600;
+      color: var(--color2);
+    }
+    input[type="submit"]:hover{
+      letter-spacing: 2px;
+      color: var(--color1);
+    }
+    .social_media{
+      display: flex;
+      justify-content: center;
+      place-items: center;
+    
+    }
+    .icons{
+      display: flex;
+    }
+    h2{
+      color:white;
+    }
+    .fa-github, .fa-linkedin-in, .fa-envelope{
+      font-size: larger;
+      color: var(--color3);
+      padding: 20px;    
+      border-radius: 50%;
+      margin-left: 18px;
+      background:var(--color1) ;
+      cursor: pointer;
+    }
+    .fa-github:hover, .fa-linkedin-in:hover, .fa-envelope:hover{
+      font-size:15px;
+    }
+  
+  @media screen and (max-width:723px){
+      .project{
+        grid-template-columns: repeat(1, 1fr);
+      }
+      footer{
+        width: 100%;
+        height: 500px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+      }
+    }
+    @media screen and (max-width:480px) {
+         #top_P{
+           display: none;
+         }
+            
+        }
+ 
+        @media screen and (max-width:360px) {
+            html{
+               width: fit-content; 
+            }
+            
+        }
+         
+    </style>
+</head>
+<body>
+
+    
+                                <!--For menu  -->
+  <header>
+    <ul class="nav" >
+      <li><a href="index.html"><i class="fas fa-home"></i><span id="top_P">Home</span></a></li>
+      <li><a href="project.html"><i class="far fa-folder"></i><span id="top_P"> Project</span> </a></li>
+     <li><a href="#con"><i class="fas fa-phone-alt"></i><span id="top_P">Contact</span></a></li>
+  </ul>                      
+  </header>
+    
+<!-- FOR DISPLAYING PROJECTS -->
+<div class="center">
+    <h1 id="P_1">Project</h1>
+    <div class="strech"></div>
+   </div>
+       <div class="project">
+
+           <div class="project_card">
+            <i class="fas fa-qrcode"></i>
+               <h1>QRcodeGenerator</h1>
+               <p id="project_content">This website used to create qrcode for the values that you are entering as input and then you can download the generated qrcode by clicking download button </p>
+               <p class="view_project"> <a href="https://b-chandru.github.io/QRcodeGenerator/" target="_blank" rel="noopener noreferrer">
+                  view project</a></p>
+             </div>
+
+             <div class="project_card">
+              <i class="fas fa-volume-up"></i>
+               <h1>Text to Speech</h1>
+               <p id="project_content" >Tried of reading book now start listening to whatever you want to read just by using this app.Just copy the text you want to read and paste it here ,then click speak button to listen it.</p>
+               <p class="view_project"> <a href="https://b-chandru.github.io/texttospeech/" target="_blank" rel="noopener noreferrer">
+                  view project</a></p>
+             </div>
+
+             <div class="project_card">
+              <i class="fas fa-paint-brush"></i>
+             <h1>Paintapp</h1>
+               <p  id="project_content" >This website is used to do drawing.you can download your drawing file in jpeg/png format with your given file name.</p>
+               <p class="view_project"> <a href="https://b-chandru.github.io/paintapp/" target="_blank" rel="noopener noreferrer">
+                  view project</a></p>
+             </div>
+
+             
+             <div class="project_card">
+              <i class="fas fa-hourglass-half"></i>
+              <h1>DHMS-Counter</h1>
+              <p id="project_content" >This website is used to count or check how many days,hours,mins,sec are there from your input date and month.</p>
+              <p class="view_project"> <a href="https://b-chandru.github.io/DHMS_Counter/" target="_blank" rel="noopener noreferrer">
+                 view project</a></p>
+            </div>
+
+             <div class="project_card">
+              <i class="far fa-compass"></i>
+                <h1>Compass</h1>
+                <p id="project_content">This website is used to give the direction using browser navigator api. </p>
+                <p class="view_project"> <a href="https://b-chandru.github.io/compass/" target="_blank" rel="noopener noreferrer">
+                   view project</a></p>
+              </div>
+              <div class="project_card">
+                <i class="fas fa-mobile-alt"></i>
+                <h1>Vibrator</h1>
+                <p id="project_content">This website enables you to vibrate your phone devices using the web vibration api.</p>
+                <p class="view_project"> <a href="https://b-chandru.github.io/vibrator/" target="_blank" rel="noopener noreferrer">
+                   view project</a></p>
+              </div>
+              <div class="project_card">
+                <i class="fas fa-desktop"></i>
+                <h1>Cnet</h1>
+                <p id="project_content">This is a sample website for selling computer products.it is a Responsive website.</p>
+                <p class="view_project"> <a href="https://b-chandru.github.io/cnet/" target="_blank" rel="noopener noreferrer">
+                   view project</a></p>
+              </div>
+              <div class="project_card">
+                <i class="far fa-grin-squint-tears"></i>
+                <h1>Memetemplates</h1>
+                <p id="project_content">This website enables you to see the trending meme templates.</p>
+                <p class="view_project"> <a href="https://b-chandru.github.io/memetemplates/" target="_blank" rel="noopener noreferrer">
+                   view project</a></p>
+              </div>
+              <div class="project_card">
+                <i class="fab fa-bitcoin"></i>
+                <h1>Crypto</h1>
+                <p id="project_content">This website gives the information about the bitcoin.This website uses api to display the crypto information.</p>
+                <p class="view_project"> <a href="https://b-chandru.github.io/crypto/" target="_blank" rel="noopener noreferrer">
+                   view project</a></p>
+              </div>
+
+
+             <div class="project_card">
+              <i class="fas fa-database"></i>
+              <h1>Rest-Api</h1>
+              <p id="project_content" >This project is about how to create a rest API for beginners using MVC pattern.</p>
+              <p class="view_project"> <a href="https://github.com/B-chandru/rest_Api" target="_blank" rel="noopener noreferrer">
+                 view project</a></p>
+            </div>
+
+
+       </div>
+       <div class="more"><a href="index.html">Back to homepage<i class="fas fa-arrow-right"></i></a></div>
+
+<!-- FOOTER  -->
+   <footer id="con">
+   <div class="msg">
+       <h2>contact</h2>
+       <form onsubmit="thank()">
+           <input type="email" name="" id="" placeholder="Email" required ><br>
+           <input type="text" name="" id="" placeholder="message" required><br><input type="submit" value="send">
+       </form>
+   </div>
+
+       <div class="social_media">
+        <h2>Stay in Touch</h2>
+           <a href="https://github.com/B-chandru/" target="_blank" rel="noopener noreferrer" ><i class="fab fa-github"></i></a>
+           <a href="https://www.linkedin.com/in/chandru-Bose" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a> 
+           <a href="mailto:chandru03012@gmail.com" target="_blank" rel="noopener noreferrer" > <i class="far fa-envelope"></i></a>
+           
+       </div>
+   </footer>
+
+   <script>
+       window.onscroll = function(){
+   document.querySelector(".strech").style.animation=" large 2s linear 2s 1 normal forwards"
+}
+
+  function thank() {
+    alert("thanks for message me 🙂");
+  }
+   </script>
+</body>
+</html>

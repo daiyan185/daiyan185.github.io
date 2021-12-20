@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this website is a showcaseof my projects in this website you can see my all projects">
+    <meta name="keywords" content="Daiyan-profolio">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+                                <!--For menu  -->
+    <header>
+      <ul class="nav" >
+          <li><a href="#"><i class="fas fa-home"></i><span id="top_P">Home</span></a></li>
+          <li><a href="project.html"><i class="far fa-folder"></i><span id="top_P"> Project</span> </a></li>
+         <li><a href="#con"><i class="fas fa-phone-alt"></i><span id="top_P">Contact</span></a></li>
+      </ul>
+  </header>
+
+
+                                    <!-- FOR my name display -->
+
+
+    <div class="main">
+        <div class="left">
+                   <h1 >Daiyan Alom Khan</h1>
+                <p id="ani">a front-end web developer</p>
+                  <a  id="top-a" href="" >My Resume</a>
+        </div>
+        <div class="right">   
+          <!-- the image used for this background is from <a href="https://storyset.com/web">Web illustrations by Storyset</a> -->
+        </div>
+    </div>
+
+
+
+                      
+    <!-- FOR DISPLAYING PROJECTS -->
+    <div class="center">
+     <h1 id="P_1">Project</h1>
+     <div class="strech"></div>
+    </div>
+        <div class="project">
+
+            <div class="project_card">
+                <i class="far fa-file-image"></i>
+                <h1>Pngtojpg Convereter</h1>
+                <p id="project_content">This website enables you to change the png to jpeg, jpeg to png and also you can change your file name.</p>
+                <p class="view_project"> <a href="https://b-chandru.github.io/photoconverter/" target="_blank" rel="noopener noreferrer">
+                   view project</a></p>
+              </div>
+
+              <div class="project_card">
+                <i class="far fa-comments"></i>
+                <h1>c-chat</h1>
+                <p id="project_content"  >This website enables you to chat with strangers who are all using the same link</p>
+                <p class="view_project"> <a href="https://c-chat-real.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                   view project</a></p>
+              </div>
+
+              <div class="project_card">
+                <i class="fas fa-mortar-pestle"></i>
+              <h1>Foodreceipeapp</h1>
+                <p  id="project_content" >This website gives a random dish recipe for u. It is a Responsive and PWA website.</p>
+                <p class="view_project"> <a href="https://b-chandru.github.io/foodrecipeapp-pwa/" target="_blank" rel="noopener noreferrer">
+                   view project</a></p>
+              </div>
+
+        
+
+              <div class="project_card">
+                <i class="far fa-file-code"></i>
+                <h1>Mj-maker</h1>
+                <p id="project_content" >This website is used to make manifest.json for your chrome extension.</p>
+                <p class="view_project"> <a href="https://b-chandru.github.io/mj_maker/" target="_blank" rel="noopener noreferrer">
+                   view project</a></p>
+              </div>
+
+        </div>
+        <div class="more"><a href="project.html" rel="noopener noreferrer">for more projects <i class="fas fa-arrow-right"></i></a></div>
+
+<!-- FOOTER  -->
+    <footer id="con">
+    <div class="msg">
+        <h2>contact</h2>
+        <form onsubmit="thank()">
+            <input type="email" name="" id="" placeholder="Email" required><br>
+            <input type="text" name="" id="" placeholder="message" required><br><input type="submit" value="send">
+        </form>
+    </div>
+
+        <div class="social_media">
+            <h2>Stay in Touch</h2>
+               <a href="https://github.com/daiyan185" target="_blank" rel="noopener noreferrer" ><i class="fab fa-github"></i></a>
+               <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdaiyan-khan-441986228%3Ffbclid%3DIwAR3tr4RVoru4N5sy5iwOLsyEmh6u6nk1AS9f5cqOnlt9zPsrMzDUVcFHt6A&h=AT16CWCIl8t5Vp0RUYSS6xQ5Bb1Nm9qTQXTsoaoNwXb8wCL3_AvQtTycmXaVcmSamLKtDq5OMFEB7x9S4T_odaxFpsMprxYSgr1PT17FK13leGnDAmv514KkL7w_3DDnM5El-Q" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a> 
+               <a href="mailto:alam16-586@diu.edu.bd" target="_blank" rel="noopener noreferrer" > <i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+
+
+
+    <script>
+window.onscroll = function(){
+   document.querySelector(".strech").style.animation=" large 2s linear 2s 1 normal forwards"
+}
+
+  function thank() {
+    alert("thanks for message me 🙂");
+  }
+    </script>
+
+</body>
+</html>
